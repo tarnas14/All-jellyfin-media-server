@@ -18,8 +18,8 @@
 
   /* --- sed-updatable values: keep each on its own line --- */
   :root {
-    --downloads-percent: 12;
-    --storage-percent: 4;
+    --downloads-percent: 18;
+    --storage-percent: 5;
   }
 
   /* ---------- LIGHT THEME (auto when OS is in light mode) ---------- */
@@ -208,13 +208,14 @@
   }
 
   /* ---------- BRAND COLORS ---------- */
-  .tile-jellyfin    { --tile-color: #AA5CC3; --tile-gradient: linear-gradient(135deg, #00A4DC, #AA5CC3); }
-  .tile-seerr       { --tile-color: #6366F1; --tile-gradient: linear-gradient(135deg, #6366F1, #EC4899); }
-  .tile-radarr      { --tile-color: #FFC230; --tile-gradient: linear-gradient(135deg, #FFC230, #FF6B00); }
-  .tile-sonarr      { --tile-color: #35C5F4; --tile-gradient: linear-gradient(135deg, #35C5F4, #1976D2); }
-  .tile-prowlarr    { --tile-color: #E66000; --tile-gradient: linear-gradient(135deg, #E66000, #C42316); }
-  .tile-bazarr      { --tile-color: #D14F2E; --tile-gradient: linear-gradient(135deg, #D14F2E, #8B2E0F); }
-  .tile-qbittorrent { --tile-color: #2F8FE6; --tile-gradient: linear-gradient(135deg, #2F8FE6, #1B4F8F); }
+  .tile-jellyfin       { --tile-color: #AA5CC3; --tile-gradient: linear-gradient(135deg, #00A4DC, #AA5CC3); }
+  .tile-seerr          { --tile-color: #6366F1; --tile-gradient: linear-gradient(135deg, #6366F1, #EC4899); }
+  .tile-radarr         { --tile-color: #FFC230; --tile-gradient: linear-gradient(135deg, #FFC230, #FF6B00); }
+  .tile-sonarr         { --tile-color: #35C5F4; --tile-gradient: linear-gradient(135deg, #35C5F4, #1976D2); }
+  .tile-prowlarr       { --tile-color: #E66000; --tile-gradient: linear-gradient(135deg, #E66000, #C42316); }
+  .tile-bazarr         { --tile-color: #D14F2E; --tile-gradient: linear-gradient(135deg, #D14F2E, #8B2E0F); }
+  .tile-qbittorrent    { --tile-color: #2F8FE6; --tile-gradient: linear-gradient(135deg, #2F8FE6, #1B4F8F); }
+  .tile-portainer      { --tile-color: #14B8A6; --tile-gradient: linear-gradient(135deg, #14B8A6, #0F766E); }
 
   /* ---------- SCROLL HINT ---------- */
   .scroll-hint {
@@ -521,6 +522,16 @@
       <div class="tile-name">qBittorrent</div>
       <div class="tile-label">Downloads</div>
     </a>
+
+    <a href="/portainer/" class="tile admin-tile tile-portainer">
+      <div class="tile-icon-wrap">
+        <svg class="tile-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 4h6v6H3V4zm0 10h6v6H3v-6zm10-10h8v3h-8V4zm0 5h8v3h-8V9zm0 5h8v3h-8v-3zm0 5h8v1h-8v-1z"/>
+        </svg>
+      </div>
+      <div class="tile-name">Portainer</div>
+      <div class="tile-label">Containers</div>
+    </a>
   </div>
 
   <div class="disk-usage">
@@ -540,7 +551,7 @@
       </div>
     </div>
     <p class="last-updated">
-      Last updated: <time id="last-updated-time">2026-06-04 23:13</time>
+      Last updated: <time id="last-updated-time">2026-06-07 19:00</time>
     </p>
   </div>
 </section>
